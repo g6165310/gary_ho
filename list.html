@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="css/homework.css">
+<html>
+<head>
+	<title>CSS 清單 (List) - 1Keydata CSS 語法教學 </title>
+</head>
+<body>
+	<h6><a href="http://www.1keydata.com/css-tutorial/tw/">CSS 教學</a> &nbsp;&gt;&nbsp; 清單</h6>
+	<p>在 CSS 中常見的清單 (list) 屬性有以下幾種： </p>
+	<p></p>
+	<li><a href="#st">list-style-type</a></li>
+	<li><a href="#sp">list-style-position</a></li>
+	<li><a href="#si">list-style-image</a></li>
+	<li><a href="#ss">list-style</a></li>
+	<p>每一個屬性在以下會有詳細地介紹：</p>
+	<h3><a name="st"></a>list-style-type</h3>
+	<p><b>list-style-type</b> 屬性是用來設定在清單中，每一條之前的記號要用什麼。最常見的 <b>list-style-type</b> 設定值為：</p>
+	<p></p>
+	<li>none (沒有)</li>
+	<li>disc (全黑圓圈)</li>
+	<li>circle (空心圓圈)</li>
+	<li>square (正方形)</li>
+	<p>One may also wish to use ordered character sets.  Common ones are:</p>
+	<p></p>
+	<li>upper-latin (大寫拉丁文)</li>
+	<li>lower-latin (小寫拉丁文)</li>
+	<li>upper-roman (大寫羅馬文)</li>
+	<li>lower-roman (小寫羅馬文)</li>
+	<li>upper-alpha (大寫希臘文)</li>
+	<li>lower-alpha (小寫希臘文)</li>
+	<p>以下列舉幾個例子：</p>
+	<p>例 1：<br>
+		<table border="0" width="500" cellpadding="10">
+			<tbody>
+				<tr>
+					<td class="color1">&lt;ul style='list-style-type:upper-roman;'&gt;
+										<br> &nbsp; &lt;li&gt;項目 1&lt;/li&gt;
+										<br> &nbsp; &lt;li&gt;項目 2&lt;/li&gt;
+										<br>&lt;/ul&gt;
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</p>
+	<p>結果：</p>
+	<ul style="list-style-type:upper-roman;">
+		<li>項目 1</li>
+		<li>項目 2</li>
+	</ul>
+	<p>例 2：<br>
+		<table border="0" width="500" cellpadding="10">
+			<tbody>
+				<tr>
+					<td class="color1">&lt;ul style='list-style-type:square;'&gt;
+										<br> &nbsp; &lt;li&gt;正方形項目 1&lt;/li&gt;
+										<br> &nbsp; &lt;li&gt;正方形項目 2&lt;/li&gt;
+										<br>&lt;/ul&gt;
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</p>
+	<p>結果：</p>
+	<ul style="list-style-type:square;">
+		<li>正方形項目 1</li>
+		<li>正方形項目 2</li>
+	</ul>
+	<h3><a name="sp"></a>list-style-position</h3>
+	<p><b>list-style-position</b> 屬性讓我們可以決定記號是否應該被視為是文字的一部份，並且由此而決定記號的位置。這個屬性可能的設定值為 "inside" 及 "outside"。預定值為 "outside"。</p>
+	<p>以下是兩個例子，由其中我們可以看出來 inside 及 outside 的不同：</p>
+	<p>例 3：<br>
+		<table border="0" width="500" cellpadding="10">
+			<tbody>
+				<tr>
+					<td class="color1">&lt;ul style='list-style-position:inside;'&gt;
+										<br> &nbsp; &lt;li&gt;第一個項目&lt;br&gt;第一項目的第二行&lt;/li&gt;
+										<br> &nbsp; &lt;li&gt;第二個項目 2&lt;/li&gt;
+										<br>&lt;/ul&gt;
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</p>
+	<p>結果：</p>
+	<ul style="list-style-position:inside;">
+		<li>第一個項目<br>第一項目的第二行</li>
+		<li>第二個項目</li>
+	</ul>
+		<p>例 4：<br>
+		<table border="0" width="500" cellpadding="10">
+			<tbody>
+				<tr>
+					<td class="color1">&lt;ul style='list-style-position:outside;'&gt;
+										<br> &nbsp; &lt;li&gt;第一個項目&lt;br&gt;第一項目的第二行&lt;/li&gt;
+										<br> &nbsp; &lt;li&gt;第二個項目 2&lt;/li&gt;
+										<br>&lt;/ul&gt;
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</p>
+	<p>結果：</p>
+	<ul style="list-style-position:outside;">
+		<li>第一個項目<br>第一項目的第二行</li>
+		<li>第二個項目</li>
+	</ul>
+	<h3><a name="si"></a>list-style-image</h3>
+	<p><b>list-style-image</b>  屬性是用來將某個圖案設定為記號。這個屬性的用法為，</p>
+	<p><font color="#006600">list-style-image:url([image_url]);</font></p>
+	<p>舉例來說，若 CSS 樣式為：</p>
+	<p>
+	<table border="0" width="500" cellpadding="10">
+		<tbody>
+			<tr>
+				<td class="color1">
+					<p>ul {<br> &nbsp; list-style-image:url("circle.gif");<br>}</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	</p>
+	<p>那以下的 HTML 碼，</p>
+	<p>
+	<table border="0" width="500"  cellpadding="10">
+		<tbody>
+			<tr>
+				<td class="color1">
+					<p>
+					&lt;ul&gt;<br> 
+					&nbsp; &lt;li&gt;第一項利用自我設定的記號。<br> 
+					&nbsp; &lt;li&gt;第二項利用自我設定的記號。<br>
+					&lt;/ul&gt;
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	</p>
+	<p>就會顯現為，</p>
+	<ul style="list-style-image:url(&quot;circle.gif&quot;);">
+		<li>第一項利用自我設定的記號。</li>
+		<li>第二項利用自我設定的記號。</li>
+	</ul>
+	<h3><a name="ss"></a>list-style</h3>
+	<p>以上提到的這三個 (<b>list-style-style</b>、<b>list-style-position</b>、及 <b>list-style-image</b>) 屬性可以被簡化為一個 <b>list-style</b> 屬性。這種做法稱為捷徑 (shortcut)。在這裡，屬性的順序並不重要。</p>
+	<p>舉例來說，以下的 CSS 樣式，</p>
+	<p>
+	<table border="0" width="500" cellpadding="10">
+		<tbody>
+			<tr>
+				<td class="color1">
+					<p>ul { <br> &nbsp; list-style: url("circle.gif") none inside;<br>}</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	</p>
+	<p>套用在以下的 HTML 碼中，</p>
+	<p>
+	<table border="0" width="500"  cellpadding="10">
+		<tbody>
+			<tr>
+				<td class="color1">
+					<p>
+					&lt;ul&gt;<br> 
+					&nbsp; &lt;li&gt;第一項以捷徑方式列出的清單。<br> 
+					&nbsp; &lt;li&gt;第二項以捷徑方式列出的清單。<br>
+					&lt;/ul&gt;
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	</p>
+	<p>就會顯現出，</p>
+	<ul style="list-style:url(&quot;circle.gif&quot;) none inside;">
+	<li>第一項以捷徑方式列出的清單。</li>
+	<li>第二項以捷徑方式列出的清單。</li>
+	</ul>
+	<p></p>
+	下一頁： <a href="table.html">CSS 表格</a>
+</body>
+</html>
