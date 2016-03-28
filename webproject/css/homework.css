@@ -1,0 +1,58 @@
+h6 {
+    font-size: 16px;
+    font-family: Georgia;
+}
+a {
+    text-decoration: none;
+}
+a:link.page1 {color:#FF0000; text-decoration:none;}
+a:visited.page1 {color:#0000FF; text-decoration:none;}
+a:hover.page1 {font-size:24; color:#00FF00; text-decoration:underline;}
+a:active.page1 {color:#FF00FF; text-decoration:underline;}
+b {
+    font-weight: bold;
+}
+
+.color1{
+	background: #DDDDDD;
+}
+.color2{
+	background: #CCFFCC;
+}
+
+table { 
+  border: 0; 
+  font-family: arial; 
+  font-size:14px; 
+} 
+th { 
+  background-color:yellow; 
+} 
+td { 
+  border-bottom:1 solid #000000; 
+} 
+.fail { 
+  color:#FF0000; 
+}
+#redblock { 
+  z-index: 1; 
+  position: 
+  absolute; 
+  width:80px; 
+  height:100px; 
+  top:20px; 
+  left:20px; 
+  border: 1px solid #FFF; 
+  background-color: #FF0000; 
+} 
+
+#pinkblock { 
+  z-index: 2; 
+  position: absolute; 
+  width:100px; 
+  height:80px; 
+  top:50px; 
+  left:50px; 
+  border: 1px solid #FFF; 
+  background-color: #FF00FF; 
+}

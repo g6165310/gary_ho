@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="css/homework.css">
+<html>
+<head>
+	<title>CSS 字體 - 1Keydata CSS 語法教學</title>
+</head>
+<body>
+	<h6><a href="http://www.1keydata.com/css-tutorial/tw/">CSS 教學</a> &nbsp;&gt;&nbsp; 字體</h6>
+	<p>在 CSS 中常見的字體 (font) 屬性有以下幾種： </p>
+	<p></p>
+	<li><a href="#family">font-family</a></li>
+	<li><a href="#size">font-size</a></li>
+	<li><a href="#weight">font-weight</a></li>
+	<li><a href="#style">font-style</a></li>
+	<li><a href="#variant">font-variant</a></li>
+	<p>每一個屬性在以下會有詳細地介紹：</p>
+	<h3><a name="family"></a>font-family</h3>
+	<p><b>font-family</b> 屬性是用來設定字體的類別。</p>
+	<p>
+		<table border="1" cellspacing="0" cellpadding="5"  width="500">
+			<tbody>
+				<tr>
+					<td>CSS 樣式</td>
+					<td>顯現結果</td>
+				</tr>
+				<tr>
+					<td>p {font-family: verdana;}</td>
+					<td><p style="font-family: verdana;">Font Family Verdana.</p></td>
+				</tr>
+				<tr>
+					<td>p {font-family: arial;}</td>
+					<td><p style="font-family: arial;">Font Family Arial.</p></td>
+				</tr>
+				<tr>
+					<td>p {font-family: impact;}</td>
+					<td><p style="font-family: impact;">Font Family Impact.</p></td>
+				</tr>
+			</tbody>
+	 	</table>
+	</p>
+	
+	<h3><a name="size"></a>font-size</h3>
+	<p><b>font-size</b>屬性是用來設定字體的大小。大小可以是以數字顯現 (絕對的或是相較的均可)，或是以下其中之一的值："xx-large"、 "x-large"、 "large"、 "medium"、 "small"、 "x-small"、和 "xx-small"。</p>
+	<p>
+		<table border="1" cellspacing="0" cellpadding="5" width="500">
+			<tbody>
+				<tr>
+					<td>CSS 樣式</td>
+					<td>顯現結果</td>
+				</tr>
+				<tr>
+					<td>p {font-size:9px;}</td>
+					<td><p style="font-size:9px;">字體大小為 9px。</p></td>
+				</tr>
+				<tr>
+					<td>p {font-size:150%;}</td>
+					<td><p style="font-size:150%;">字體大小為 150%。</p></td>
+				</tr>
+				<tr>
+					<td>p {font-size:0.8cm;}</td>
+					<td><p style="font-size:0.8cm;">字體大小為 0.8 cm。</p></td>
+				</tr>
+				<tr>
+					<td>p {font-size:small;}</td>
+					<td><p style="font-size:small">字體大小為 small。</p></td>
+				</tr>
+				<tr>
+					<td>p {font-size:large}</td>
+					<td><p style="font-size:large;">字體大小為 large。</p></td>
+				</tr>
+			</tbody>
+	 	</table>
+	</p>
+	<h3><a name="weight"></a>font-weight</h3>
+	<p><b>font-weight</b>屬性是用來設定字體的厚度。厚度的設定值可以從 100 到 900 (900 是最厚的)。另外，我們也可以將厚度設定為 bold (厚)、bolder (更厚)、及 normal (正常)。</p>
+	<p>以下舉幾個例子：</p>
+	<p>
+		<table border="1" cellspacing="0" cellpadding="5" width="500">
+			<tbody>
+				<tr>
+					<td>CSS 樣式</td>
+					<td>顯現結果</td>
+				</tr>
+				<tr>
+					<td>p {font-weight: 100;}</td>
+					<td><p style="font-weight: 100;">這是厚度 100。</p></td>
+				</tr>
+				<tr>
+					<td>p {font-weight: 900;}</td>
+					<td><p style="font-weight: 900;">這是厚度 900。</p></td>
+				</tr>
+				<tr>
+					<td>p {font-weight: bold;}</td>
+					<td><p style="font-weight: bold;">這是 bold 厚度。</p></td>
+				</tr>
+			</tbody>
+	 	</table>
+	</p>
+	<h3><a name="style"></a>font-style</h3>
+	<p><b>font-style</b>屬性是用來設定字體是否為斜體字 (italic 或 oblique)。</p>
+	<p>
+		<table border="1" cellspacing="0" cellpadding="5"  width="500">
+			<tbody>
+				<tr>
+					<td>CSS 樣式</td>
+					<td>顯現結果</td>
+				</tr>
+				<tr>
+					<td>p {font-style: italic;}</td>
+					<td><p style="font-style: italic;">這這是斜體字。</p></td>
+				</tr>
+			</tbody>
+	 	</table>
+	</p>
+	<h3><a name="variant"></a>font-variant</h3>
+	<p><b>font-variant</b>屬性是用來設定文字是不是要以小型大寫 (small caps) 字體顯現。在小型大寫字體中，所有的字母都是大寫，可是字體是比一般大寫來得小。可能的值為 "small-caps" 和 "normal"。來看下面的例子：</p>
+	<p>CSS宣告，</p>
+	<p>
+		<table border="0" width="500"cellpadding="10">
+			<tbody>
+				<tr>
+					<td class="color1">
+						<p>span {<br> &nbsp; font-variant:small-caps;<br>}</p>
+					</td>
+				</tr>
+			
+			</tbody>
+		</table>
+
+	</p>
+	<p>以下的 HTML 碼，</p>
+	<p>
+		<table border="0" width="500"cellpadding="10">
+			<tbody>
+				<tr>
+					<td class="color1">
+						<p>&lt;span&gt;initial in small caps&lt;/span&gt; AND LATER IN LARGE CAPS.</p>
+					</td>
+				</tr>
+			
+			</tbody>
+		</table>
+	</p>
+	<p>就會顯現出，</p>
+	<p>
+		<table border="0" width="500"cellpadding="10">
+			<tbody>
+				<tr>
+					<td class="color2">
+						<p><span style="font-variant:small-caps;">initial in small caps</span> AND LATER IN LARGE CAPS.</p>
+					</td>
+				</tr>
+			
+			</tbody>
+		</table>
+	</p>
+	<p></p>
+	下一頁： <a href="link.html">CSS 連接</a>
+
+</body>
+</html>
